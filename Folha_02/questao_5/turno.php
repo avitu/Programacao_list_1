@@ -8,16 +8,16 @@
         <?php
            $turno = $_POST['turno'];
 
-        if ($turno == M || $turno == m) {
+        if ($turno == "M" || $turno == "m") {
             echo "Bom Dia!";
         }
-        if ($turno == V || $turno == v) {
+        if ($turno == "V" || $turno == "v") {
             echo "Boa Tarde!";
         }
-        if ($turno == N || $turno == n) {
+        if ($turno == "N" || $turno == "n") {
             echo "Boa Noite!";
         }
-        elseif ($turno <> M && $turno <> Y && $turno <> M) {
+        elseif ($turno <> "M" && $turno <> "V" && $turno <> "N" && $turno <> "m" && $turno <> "v") {
             echo "Valor inválido!";
         }   
         ?>
